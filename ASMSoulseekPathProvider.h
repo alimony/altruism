@@ -1,23 +1,22 @@
 /*
-Copyright (c) 2008 Markus Amalthea Magnuson <markus.magnuson@gmail.com>
+-----------------------------------------------
+  ALTRUISM LICENSE
+ 
+  “Do what you want to do,
+  and go where you're going to
+  Think for yourself,
+  'cause I won't be there with you”
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+  You are completely free to do anything with
+  this source code, but if you try to make
+  money on it you will be beaten up with a
+  large stick. I take no responsibility for
+  anything, and this license text must
+  always be included.
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+  Markus Amalthea Magnuson
+  markus.magnuson@gmail.com
+-----------------------------------------------
 */
 
 #import <Cocoa/Cocoa.h>
