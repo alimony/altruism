@@ -12,8 +12,6 @@
 		281788F70D9415C000BED165 /* AGRegex.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 281788C00D94141D00BED165 /* AGRegex.framework */; };
 		281789370D941B3200BED165 /* ID3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 281789360D941B3200BED165 /* ID3.framework */; };
 		281789450D941B3A00BED165 /* ID3.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 281789360D941B3200BED165 /* ID3.framework */; };
-		283B8AD60DB426200075C3E0 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283B8AD50DB426200075C3E0 /* Sparkle.framework */; };
-		283B8AF80DB426820075C3E0 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 283B8AD50DB426200075C3E0 /* Sparkle.framework */; };
 		283F6E3F0D9F16A8002DDACE /* golden_record_250.tif in Resources */ = {isa = PBXBuildFile; fileRef = 283F6E3E0D9F16A8002DDACE /* golden_record_250.tif */; };
 		283F6F310D9F1BB3002DDACE /* Altruism.icns in Resources */ = {isa = PBXBuildFile; fileRef = 283F6F300D9F1BB3002DDACE /* Altruism.icns */; };
 		283F6F6C0D9F2003002DDACE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 283F6F6B0D9F2003002DDACE /* Credits.rtf */; };
@@ -33,7 +31,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				283B8AF80DB426820075C3E0 /* Sparkle.framework in CopyFiles */,
 				281789450D941B3A00BED165 /* ID3.framework in CopyFiles */,
 				281788F70D9415C000BED165 /* AGRegex.framework in CopyFiles */,
 			);
@@ -47,7 +44,6 @@
 		281787940D93F6A900BED165 /* ASMSoulseekPathProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMSoulseekPathProvider.m; sourceTree = "<group>"; };
 		281788C00D94141D00BED165 /* AGRegex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AGRegex.framework; sourceTree = "<group>"; };
 		281789360D941B3200BED165 /* ID3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ID3.framework; sourceTree = "<group>"; };
-		283B8AD50DB426200075C3E0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		283F6E3E0D9F16A8002DDACE /* golden_record_250.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = golden_record_250.tif; path = Images/golden_record_250.tif; sourceTree = "<group>"; };
 		283F6F300D9F1BB3002DDACE /* Altruism.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Altruism.icns; sourceTree = "<group>"; };
 		283F6F6B0D9F2003002DDACE /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
@@ -76,7 +72,6 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				281788C10D94141D00BED165 /* AGRegex.framework in Frameworks */,
 				281789370D941B3200BED165 /* ID3.framework in Frameworks */,
-				283B8AD60DB426200075C3E0 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
-				283B8AD50DB426200075C3E0 /* Sparkle.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -129,8 +123,8 @@
 				28DB2E8B0D93EC1D00E3B22A /* ASMPathProvider.m */,
 				281787930D93F6A900BED165 /* ASMSoulseekPathProvider.h */,
 				281787940D93F6A900BED165 /* ASMSoulseekPathProvider.m */,
-				FFF2E5030D945514005D15BC /* ASMShakesPeerPathProvider.h */,
 				FFF2E5020D945514005D15BC /* ASMShakesPeerPathProvider.m */,
+				FFF2E5030D945514005D15BC /* ASMShakesPeerPathProvider.h */,
 			);
 			name = "Path Providers";
 			sourceTree = "<group>";
@@ -267,10 +261,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -291,10 +283,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)\"";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Altruism_Prefix.pch;
@@ -308,11 +298,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(NATIVE_ARCH)";
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH)";
 				PREBINDING = NO;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
