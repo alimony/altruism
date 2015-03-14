@@ -1,0 +1,1 @@
+Altruism is an application that monitors your uploaded songs, and automatically adds these to a playlist in iTunes. Like having your friends over, playing songs from your computer, but on a much larger scale.
