@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2008 Markus Amalthea Magnuson <markus.magnuson@gmail.com>
+Copyright (c) 2008 Markus Amalthea Magnuson <markus@polyscopic.works>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -27,7 +27,7 @@ THE SOFTWARE.
 @interface ASMLogController : NSObject
 {
 	IBOutlet ASMPlayerController *playerController;
-	
+
 	NSMutableSet *uniquePaths;
 }
 

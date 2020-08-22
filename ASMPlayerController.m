@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2008 Markus Amalthea Magnuson <markus.magnuson@gmail.com>
+Copyright (c) 2008 Markus Amalthea Magnuson <markus@polyscopic.works>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -36,7 +36,7 @@ THE SOFTWARE.
 		NSString *theTitle = [tag getTitle];
 		NSString *theAlbum = [tag getAlbum];
 		[tag release];
-		
+
 		// run a simple applescript
 		NSDictionary *errorDict;
 		NSAppleEventDescriptor *returnDescriptor = NULL;
@@ -53,10 +53,10 @@ THE SOFTWARE.
 																			 end if\n\
 																			 duplicate (every track of library playlist 1 whose artist is theArtist and name is theTitle and album is theAlbum) to playlist playlistName\n\
 																			 end tell", theTitle, theArtist, theAlbum]];
-		
+
 		returnDescriptor = [scriptObject executeAndReturnError:&errorDict];
 		[scriptObject release];
-		
+
 		if (returnDescriptor != NULL) {
 			// successful execution
 			NSLog(@"Added %@ by %@ to iTunes", theTitle, theArtist);

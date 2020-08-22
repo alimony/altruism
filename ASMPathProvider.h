@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2008 Markus Amalthea Magnuson <markus.magnuson@gmail.com>
+Copyright (c) 2008 Markus Amalthea Magnuson <markus@polyscopic.works>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -40,7 +40,7 @@ THE SOFTWARE.
 
 // starts listening to the logfile at "path". returns NO on failure.
 // NOTE: you also need to implement receivedLogData: below.
-- (BOOL)tailThisForMe:(NSString *)path; 
+- (BOOL)tailThisForMe:(NSString *)path;
 
 @end
 

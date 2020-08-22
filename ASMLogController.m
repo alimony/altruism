@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2008 Markus Amalthea Magnuson <markus.magnuson@gmail.com>
+Copyright (c) 2008 Markus Amalthea Magnuson <markus@polyscopic.works>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -30,14 +30,14 @@ THE SOFTWARE.
 	if ((self = [super init])) {
 		uniquePaths = [[NSMutableSet alloc] init];
 	}
-	
+
 	return self;
 }
 
 - (void)dealloc
 {
 	[uniquePaths release];
-	
+
 	[super dealloc];
 }
 
@@ -46,7 +46,7 @@ THE SOFTWARE.
 	if (![uniquePaths member:path]) {
 		// we haven't added this song, so send it to our player and remember it
 		[playerController addFileToPlayer:path];
-		
+
 		[uniquePaths addObject:path];
 	}
 }

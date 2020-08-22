@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2008 Markus Amalthea Magnuson <markus.magnuson@gmail.com>
+Copyright (c) 2008 Markus Amalthea Magnuson <markus@polyscopic.works>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -36,29 +36,29 @@ THE SOFTWARE.
 			NSLog(@"No log file at %@", path);
 			return NO;
 		}
-		
+
 		NSPipe *pipe = [NSPipe pipe];
 		pipeHandle = [[pipe fileHandleForReading] retain];
 		[pipeHandle readInBackgroundAndNotify];
-		
+
 		[[NSNotificationCenter defaultCenter] addObserver:self
 												 selector:@selector(newData:)
 													 name:NSFileHandleReadCompletionNotification
 												   object:pipeHandle];
-		
+
 		tail = [[NSTask alloc] init];
-		
+
 		[tail setLaunchPath:@"/usr/bin/tail"];
 		[tail setStandardOutput:pipe];
 		[tail setArguments:[NSArray arrayWithObjects:@"-f", path, nil]];
-		
+
 		[tail launch];
-		
+
 		// TODO: return NO on error above
-		
+
 		return YES;
 	}
-	
+
 	return NO;
 }
 
@@ -66,13 +66,13 @@ THE SOFTWARE.
 {
 	// TODO: We should only notify with whole lines instead of chunks
 	// of bytes, as these may be cut off in the middle
-	
-	NSData *data = [[dataNotification userInfo] objectForKey:NSFileHandleNotificationDataItem]; 
-	
+
+	NSData *data = [[dataNotification userInfo] objectForKey:NSFileHandleNotificationDataItem];
+
 	// call subclass with new data
 	if ([self respondsToSelector:@selector(newData:)])
-		[self receivedLogData:data]; 
-    
+		[self receivedLogData:data];
+
 	[pipeHandle readInBackgroundAndNotify];
 }
 
